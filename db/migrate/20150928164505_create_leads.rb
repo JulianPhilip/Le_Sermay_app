@@ -13,8 +13,7 @@ class CreateLeads < ActiveRecord::Migration
       t.string :tel
       t.string :formule
       t.string :format
-      t.string :message
-      t.string :text
+      t.text :message
 
       t.timestamps null: false
     end
