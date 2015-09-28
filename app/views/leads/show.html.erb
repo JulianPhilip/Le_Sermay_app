@@ -1,0 +1,74 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Titre:</strong>
+  <%= @lead.titre %>
+</p>
+
+<p>
+  <strong>Nom:</strong>
+  <%= @lead.nom %>
+</p>
+
+<p>
+  <strong>Prenom:</strong>
+  <%= @lead.prenom %>
+</p>
+
+<p>
+  <strong>Date naissance:</strong>
+  <%= @lead.date_naissance %>
+</p>
+
+<p>
+  <strong>Adresse:</strong>
+  <%= @lead.adresse %>
+</p>
+
+<p>
+  <strong>Code postal:</strong>
+  <%= @lead.code_postal %>
+</p>
+
+<p>
+  <strong>Ville:</strong>
+  <%= @lead.ville %>
+</p>
+
+<p>
+  <strong>Pays:</strong>
+  <%= @lead.pays %>
+</p>
+
+<p>
+  <strong>Mail:</strong>
+  <%= @lead.mail %>
+</p>
+
+<p>
+  <strong>Tel:</strong>
+  <%= @lead.tel %>
+</p>
+
+<p>
+  <strong>Formule:</strong>
+  <%= @lead.formule %>
+</p>
+
+<p>
+  <strong>Format:</strong>
+  <%= @lead.format %>
+</p>
+
+<p>
+  <strong>Message:</strong>
+  <%= @lead.message %>
+</p>
+
+<p>
+  <strong>Text:</strong>
+  <%= @lead.text %>
+</p>
+
+<%= link_to 'Edit', edit_lead_path(@lead) %> |
+<%= link_to 'Back', leads_path %>

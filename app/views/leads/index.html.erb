@@ -1,0 +1,53 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Leads</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Titre</th>
+      <th>Nom</th>
+      <th>Prenom</th>
+      <th>Date naissance</th>
+      <th>Adresse</th>
+      <th>Code postal</th>
+      <th>Ville</th>
+      <th>Pays</th>
+      <th>Mail</th>
+      <th>Tel</th>
+      <th>Formule</th>
+      <th>Format</th>
+      <th>Message</th>
+      <th>Text</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @leads.each do |lead| %>
+      <tr>
+        <td><%= lead.titre %></td>
+        <td><%= lead.nom %></td>
+        <td><%= lead.prenom %></td>
+        <td><%= lead.date_naissance %></td>
+        <td><%= lead.adresse %></td>
+        <td><%= lead.code_postal %></td>
+        <td><%= lead.ville %></td>
+        <td><%= lead.pays %></td>
+        <td><%= lead.mail %></td>
+        <td><%= lead.tel %></td>
+        <td><%= lead.formule %></td>
+        <td><%= lead.format %></td>
+        <td><%= lead.message %></td>
+        <td><%= lead.text %></td>
+        <td><%= link_to 'Show', lead %></td>
+        <td><%= link_to 'Edit', edit_lead_path(lead) %></td>
+        <td><%= link_to 'Destroy', lead, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Lead', new_lead_path %>
