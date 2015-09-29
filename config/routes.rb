@@ -1,4 +1,12 @@
 Rails.application.routes.draw do
+  get 'welcome/index'
+
+  get 'welcome/about'
+
+  get 'welcome/location'
+
+  get 'welcome/contact'
+
   resources :leads
 
   root to: 'leads#index'
